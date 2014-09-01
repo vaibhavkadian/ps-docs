@@ -1,0 +1,46 @@
+GRUNT
+
+task based command line build tool for JavaScript projects
+
+package.json -> http://package.json.nodejitsu.com/
+gruntfile.js
+
+grunt taskname -v
+	-to run gruntfile
+	-v for verbose output
+
+pre-requisite
+	Nodejs --> http://nodejs.org/
+	NPM --> http://npmjs.org/
+
+with grunt we can
+	compile typescript to javascript
+	validate havascript w/ JSHint
+	compress javascript w/ Uglify
+	cleaning files&folders w/ Contrib-Clean
+
+Typscript plugin installation
+	npm install grunt-typescript -save-dev
+
+typescript compilation option
+	one .ts to one .js
+	multiple .ts to single .js
+		dependencies order defined
+		reduce number of scipt tag used
+
+Validation using JSHint [jshint.com/documentation]
+	npm install grunt-contrib-jshint --save-dev
+
+	ignore specific warnings / log rendered output / configuration options
+
+Compress using Uglify [lisperator.net/uglifyjs/]
+	npm install grunt-contrib-uglify --save-dev
+
+	turn on/off mangling / compression / beautification
+
+Cleaning files/folders using Contrib-Clean
+	npm install grunt-contrib-clean --save-dev
+
+	force remove / log rendered output / 
+
+
