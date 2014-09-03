@@ -28,19 +28,53 @@ typescript compilation option
 		dependencies order defined
 		reduce number of scipt tag used
 
-Validation using JSHint [jshint.com/documentation]
-	npm install grunt-contrib-jshint --save-dev
+operations for javascript 
+	Validation using JSHint [jshint.com/documentation]
+		npm install grunt-contrib-jshint --save-dev
 
-	ignore specific warnings / log rendered output / configuration options
+		ignore specific warnings / log rendered output / configuration options
 
-Compress using Uglify [lisperator.net/uglifyjs/]
-	npm install grunt-contrib-uglify --save-dev
+	Compress using Uglify [lisperator.net/uglifyjs/]
+		npm install grunt-contrib-uglify --save-dev
 
-	turn on/off mangling / compression / beautification
+		turn on/off mangling / compression / beautification
 
-Cleaning files/folders using Contrib-Clean
-	npm install grunt-contrib-clean --save-dev
+	Cleaning files/folders using Contrib-Clean
+		npm install grunt-contrib-clean --save-dev
 
-	force remove / log rendered output / 
+		force remove / log rendered output / 
 
+
+npm install grunt-htmlhint --save-dev
+	ensure unique tag id's 
+	valid attributes
+		attr-lower-case
+		attr-value-not-empty
+		tag-pair
+		tag-self-close
+		tagname-lower-case
+		id-class-value
+		id-class-unique
+		src-not-empty
+		img-alt-required
+
+npm install grunt-contrib-htmlmin --save-dev [details @github html-minifier]
+	remove HTML comments
+	collapse whitespace and tags
+	remove redundant tag elements
+		removeEmptyAttributes
+		removeEmptyElements
+		removeRedundantAttributes
+		removeComments
+		removeOptionalTags
+
+npm install grunt-contrib-less --save-dev
+	compress , modify less variables prior conversion
+
+npm install grunt-contrib-csslint --save-dev
+	configure rules (35)
+	extrnal configurations file with rules
+
+npm install grunt-contrib-cssmin --save-dev
+	compress single / multiple [single output]
 
