@@ -1,0 +1,63 @@
+MongoDB for Windows
+
+Coming from a windows background, after a lot of head-banging against open-source wall I realized that file path or folder name should not have spaces. This helps in a lot of way, so make it a golden rule.
+
+Download and install NodeJS
+
+Download and install MongoDB msi [http://www.mongodb.org/downloads]
+MongoDB Installer will default install @C:\Program Files\MongoDB2.6
+Copy the installed MongoDB directory to place you prefer as there are no dependency with it.
+Preferable add MongoDB bin directory to SYS ENV path [ex: D:\DevEnv\MongoDB2.6\bin]
+Choose a directory where you want to store all database related detials created by mongodb process [ex: D:\DevEnv\Proj]
+Create folder as below inside the above choosen direcotry
+	data
+		db
+		log
+
+Now create a configuration file for mongodb folder
+
+echo logpath=D:\DevEnv\Proj\data\log\mongod.log> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+echo dbpath=D:\DevEnv\Proj\data\db>> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+
+Create mongod.cfg file should have below lines without """ in it.
+logpath=d:\DevEnv\Proj\data\log\mongod.log
+dbpath=d:\DevEnv\Proj\data\db
+
+You can also add below line to run mongo service on specific port, but this is optional as mongo.exe will connect with installed service @localhost
+port=<port-number>
+
+Install mongo DB service
+sc.exe create MongoDB binPath= "\"D:\DevEnv\MongoDB2.6\bin\mongod.exe\" --service --config=\"D:\DevEnv\MongoDB2.6\\mongod.cfg\"" DisplayName= "MongoDB 2.6" start= "auto"
+
+net start mongodb
+
+Use below two command to stop and remove mongodb service
+	net stop mongodb
+	sc.exe delete mongodb
+
+refer : http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/#windows-8
+
+
+mongotop [to test mongo install service]
+Ctrl+C
+mongo [to start interaction with mongo installed service via prompt]
+
+show dbs [to check current avaialble databases]
+use <db-name> [to create and start working on specific database, this would be the active db, all further command with prefix db would act on this]
+	Database
+		Collections [json formatted key/value pairs]
+
+db.createCollection('<collection-name>')
+
+db.<collection-name>.insert({key:value...})
+	a key '_id' with unique value of type ObjectId is inserted by default with every collection item.
+	_id is 12 bytes hexadecimal number unique for every document in a collection. 12 bytes are divided as follows: 
+		_id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id, 3 bytes incrementer)
+
+db.<collection-name>.find()
+db.<collection-name>.find().pretty()
+
+db.<collection-name>.remove('')
+	remove all items in collection
+show collections
+	will display all collections create under active database
