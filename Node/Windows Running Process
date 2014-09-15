@@ -1,0 +1,10 @@
+Windows Running Process 
+	[useful when used with node forever & node-inspector]
+
+tasklist /FI "IMAGENAME eq node.exe"
+	-list all processes with IMAGE NAME as node.exe
+	-https://github.com/node-inspector/node-inspector
+
+taskkill /PID 3084
+	-kill process running as PID 3084
+	-http://www.tech-recipes.com/rx/446/xp_kill_windows_process_command_line_taskkill/
