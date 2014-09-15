@@ -1,0 +1,7 @@
+Running Your Node.js Application with Forever
+
+
+npm install forever -g
+
+forever start --spinSleepTiem 10000 serve.js
+	Where --spinSleepTime 10000 refers to the minimum uptime (in milliseconds) between launches of a crashing script. This command will work for almost all cases.
