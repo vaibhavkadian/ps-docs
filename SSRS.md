@@ -23,7 +23,7 @@ Some of the use cases for it are :
 
 
 
-[DataDriven E-Mail Subscriptions](DataDrivenEmailSubscriptions.md "DataDriven E-Mail Subscriptions")
+[DataDriven E-Mail Subscriptions](SSRS/DataDrivenEmailSubscriptions.md "DataDriven E-Mail Subscriptions")
 
 
 
