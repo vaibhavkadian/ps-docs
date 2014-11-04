@@ -41,7 +41,7 @@ Once the ReportServer is up you'll see right side menu options activated.
 
 ---  
 
-## Some of the Important settings required to have a functional ReportServer are below {#ImportantSettings}
+## Some of the Important settings required to have a functional ReportServer are below <a name="ImportantSettings" />
 
 >
 >>**Service Account**    
