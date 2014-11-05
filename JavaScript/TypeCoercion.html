@@ -7,12 +7,18 @@
 	<p><pre>
 		Guess the Output:
 
-		1. "The answer is " + 42 
-		2. "37" - 7
-		3. "37" + 7
-		4. console.log(foo == foo) [if var foo = [0] exists]
-		5. console.log(foo == !foo) [if var foo = [0] exists]
-		6. console.log(foo === !foo) [if var foo = [0] exists]
+		1. "The answer is " + 42 <a href="#" onclick="show('one',('The answer is ' + 42))" >Show Ans:</a>
+			<div id="one"></div> 
+		2. "37" - 7 <a href="#" onclick="show('two',('37' - 7))" >Show Ans:</a>
+			<div id="two"></div>
+		3. "37" + 7 <a href="#" onclick="show('three',('37' + 7))" >Show Ans:</a>
+			<div id="three"></div>
+		4. foo == foo [if var foo = [0] exists] <a href="#" onclick="show('four',(foo == foo))" >Show Ans:</a>
+			<div id="four"></div>
+		5. foo == !foo [if var foo = [0] exists] <a href="#" onclick="show('five',(foo == !foo))" >Show Ans:</a>
+			<div id="five"></div>
+		6. foo === !foo [if var foo = [0] exists] <a href="#" onclick="show('six',(foo === !foo))" >Show Ans:</a>
+			<div id="six"></div>
 
 		View Browser console for answeres,
 	</pre></p>
@@ -36,6 +42,13 @@
 		console.log();
 		console.log('Output 6.');
 		console.log(foo === !foo);
+
+		function show(divID, ans)
+		{
+			var div = document.getElementById(divID);
+			div.style.display="block";
+			div.innerHTML += ans;
+		}
 	</script>
 </body>
 </html>

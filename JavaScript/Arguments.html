@@ -17,8 +17,10 @@
 		    }
 		}
 
-		1. toLog() 
-		2. toLog(12, '27', 'What is my type??')
+		1. toLog() <a href="#" onclick="show('one',toLog())" >Show Ans:</a>
+			<div id="one"></div>
+		2. toLog(12, '27', 'What is my type??') <a href="#" onclick="show('two',toLog(12, '27', 'What is my type??'))" >Show Ans:</a>
+			<div id="two"></div>
 
 		View Browser console for answeres,
 	</pre></p>
@@ -30,8 +32,8 @@
 		        for(var a = 0; a < arguments.length; a++) {
 		            ArgString += arguments[a];
 		        }
-		        console.log(ArgString);
 		    }
+		    return (ArgString);
 		}
 		console.log('Output 1.');
 		console.log(toLog());
@@ -39,6 +41,13 @@
 		console.log('Output 2.');
 		console.log(toLog(12, '27', 'What is my type??'));
 		console.log();
+
+		function show(divID, ans)
+		{
+			var div = document.getElementById(divID);
+			div.style.display="block";
+			div.innerHTML += ans;
+		}
 	</script>
 </body>
 </html>
