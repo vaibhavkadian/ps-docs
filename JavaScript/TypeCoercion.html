@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p><pre>
+		Guess the Output:
+
+		1. "The answer is " + 42 
+		2. "37" - 7
+		3. "37" + 7
+		4. console.log(foo == foo) [if var foo = [0] exists]
+		5. console.log(foo == !foo) [if var foo = [0] exists]
+		6. console.log(foo === !foo) [if var foo = [0] exists]
+
+		View Browser console for answeres,
+	</pre></p>
+
+	<script>
+		console.log('Output 1.');
+		console.log("The answer is " + 42);
+		console.log();
+		console.log('Output 2.');
+		console.log("37" - 7);
+		console.log();
+		console.log('Output 3.');
+		console.log("37" + 7);
+		console.log();
+		var foo = [0];
+		console.log('Output 4.');
+		console.log(foo == foo);
+		console.log();
+		console.log('Output 5.');
+		console.log(foo == !foo);
+		console.log();
+		console.log('Output 6.');
+		console.log(foo === !foo);
+	</script>
+</body>
+</html>

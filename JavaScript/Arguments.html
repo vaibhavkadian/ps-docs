@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p><pre>
+		Guess the Output:
+		
+		function toLog() {
+		    if(arguments.length) {
+		        var ArgString = "";
+		        for(var a = 0; a < arguments.length; a++) {
+		            ArgString += arguments[a];
+		        }
+		        console.log(ArgString);
+		    }
+		}
+
+		1. toLog() 
+		2. toLog(12, '27', 'What is my type??')
+
+		View Browser console for answeres,
+	</pre></p>
+
+	<script>
+		function toLog() {
+		    if(arguments.length) {
+		        var ArgString = "";
+		        for(var a = 0; a < arguments.length; a++) {
+		            ArgString += arguments[a];
+		        }
+		        console.log(ArgString);
+		    }
+		}
+		console.log('Output 1.');
+		console.log(toLog());
+		console.log();
+		console.log('Output 2.');
+		console.log(toLog(12, '27', 'What is my type??'));
+		console.log();
+	</script>
+</body>
+</html>
