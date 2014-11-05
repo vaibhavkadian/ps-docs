@@ -1,5 +1,7 @@
 # Sample document files based of learning from tutorials #
 
+[Practical DOS commands](DOS.md)
+
 [JavaScript](Javascript.md "JavaScript")  
 [Bower](Bower.md "Bower")  
 [GRUNT.md](GRUNT.md "GRUNT")  
