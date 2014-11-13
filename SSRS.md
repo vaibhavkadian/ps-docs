@@ -11,6 +11,7 @@ Some of the use cases for it are :
 
 .rdl Report Definition File
   
+> these are plain XML files, you can edit them in a normal textpad if the only object is to compare and sync up reports.  
 >.rdl.data Report cache used only while "Preview" from solution.
 >
 >>They're purely to speed up report execution time during development when you repeatedly run the report with the same parameters whilst tweaking the layout.
@@ -26,7 +27,12 @@ Some of the use cases for it are :
 
 
 [Report Server Setup](SSRS/ReportServerSetup.md "Report Server Setup")  
-[DataDriven E-Mail Subscriptions](SSRS/DataDrivenEmailSubscriptions.md "DataDriven E-Mail Subscriptions")
+[DataDriven E-Mail Subscriptions](SSRS/DataDrivenEmailSubscriptions.md "DataDriven E-Mail Subscriptions")  
+
+---
+
+ 
+[Things Learnt the Hard Way ... Best Practices](SSRS/ThingsLearntHardWay.md "Things Learnt the Hard Way ... Best Practices")
 
 
 

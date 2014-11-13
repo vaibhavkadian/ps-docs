@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p><pre>
+		Reverse the string : <a href="#" onclick="show('one',strReverse())" >Show Ans:</a>
+			var dwarves = "bashful doc dopey grumpy happy sleepy sneezy";
+			Output : "sneezy sleepy happy grumpy dopey doc bashful"
+			<div id="one" style="display:none;">
+
+				Single line of JS code has achieved this :
+					var strReverse = dwarves.split(" ").reverse().join(" ");
+				Code Explanation : 
+					split function creates an array of string separated by " ".
+					reverse does the obvious i.e. revered word array.
+					join creates a single string using array elements separated by " ".
+					FYI - if you miss " " and instead specify "", the string would reverse by character.
+			</div>
+	</pre></p>
+
+	<script>
+		
+		function strReverse(){
+			
+			var dwarves = "bashful doc dopey grumpy happy sleepy sneezy";
+			var strReverse = dwarves.split(" ").reverse().join(" ");
+
+			return strReverse;
+		}
+
+		function show(divID, ans)
+		{
+			var div = document.getElementById(divID);
+			div.style.display="block";
+			div.innerHTML = ans + div.innerHTML;
+		}
+	</script>
+</body>
+</html>

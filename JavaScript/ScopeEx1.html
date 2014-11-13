@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p><pre>
+		Guess the Output:
+		
+		x();
+		function x(){
+			var x=1;
+			document.writeln("1: " + x);
+			{
+				var x=4;
+			}
+			document.writeln("2: " + x);
+			var f = function(){
+				document.writeln("3: " + x);
+				var x=3;
+			};
+			f();
+			document.writeln("4: " + x);
+		}
+
+		1. <a href="#" onclick="show('one',x())" >Show Ans:</a>
+			<div id="one"></div>
+		
+	</pre></p>
+
+	<script>
+		
+		function x(){
+			var x=1;
+			document.writeln("1: " + x);
+			{
+				var x=4;
+			}
+			document.writeln("2: " + x);
+			var f = function(){
+				document.writeln("3: " + x);
+				var x=3;
+			};
+			f();
+			document.writeln("4: " + x);
+		}
+
+		function show(divID, ans)
+		{
+			var div = document.getElementById(divID);
+			div.style.display="block";
+			div.innerHTML += ans;
+		}
+	</script>
+</body>
+</html>

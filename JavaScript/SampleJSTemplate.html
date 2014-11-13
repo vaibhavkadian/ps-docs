@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p><pre>
+		Guess the Output:
+		
+		1. <a href="#" onclick="show('one',)" >Show Ans:</a>
+			<div id="one"></div>
+		
+	</pre></p>
+
+	<script>
+		
+
+		function show(divID, ans)
+		{
+			var div = document.getElementById(divID);
+			div.style.display="block";
+			div.innerHTML += ans;
+		}
+	</script>
+</body>
+</html>
