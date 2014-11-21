@@ -1,0 +1,116 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+<style type="text/css">
+    .exclusion  {
+      wrap-flow: both;
+      position: absolute;
+      width: 200px;
+    }
+    .topleft {
+      top: 10px;
+      left: 10px;
+      background-color: lightblue;
+    }
+    .middle {
+      top: 90px;
+      left: 90px;
+      background-color: lightgreen;
+      z-index: auto;
+    }
+    .bottomright {
+      top: 170px;
+      left: 170px;
+      background-color: pink;
+    }
+</style>
+
+<div class="exclusion topleft">
+    MongoDB for Windows
+
+Coming from a windows background, after a lot of head-banging against open-source wall I realized that file path or folder name should not have spaces. This helps in a lot of way, so make it a golden rule.
+
+Download and install NodeJS
+
+Download and install MongoDB msi [http://www.mongodb.org/downloads]
+MongoDB Installer will default install @C:\Program Files\MongoDB2.6
+Copy the installed MongoDB directory to place you prefer as there are no dependency with it.
+Preferable add MongoDB bin directory to SYS ENV path [ex: D:\DevEnv\MongoDB2.6\bin]
+Choose a directory where you want to store all database related detials created by mongodb process [ex: D:\DevEnv\Proj]
+Create folder as below inside the above choosen direcotry
+  data
+    db
+    log
+
+Now create a configuration file for mongodb folder
+
+echo logpath=D:\DevEnv\Proj\data\log\mongod.log> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+echo dbpath=D:\DevEnv\Proj\data\db>> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+
+Create mongod.cfg file should have below lines without """ in it.
+logpath=d:\DevEnv\Proj\data\log\mongod.log
+dbpath=d:\DevEnv\Proj\data\d
+</div>
+<div class="exclusion middle">
+    MongoDB for Windows
+
+Coming from a windows background, after a lot of head-banging against open-source wall I realized that file path or folder name should not have spaces. This helps in a lot of way, so make it a golden rule.
+
+Download and install NodeJS
+
+Download and install MongoDB msi [http://www.mongodb.org/downloads]
+MongoDB Installer will default install @C:\Program Files\MongoDB2.6
+Copy the installed MongoDB directory to place you prefer as there are no dependency with it.
+Preferable add MongoDB bin directory to SYS ENV path [ex: D:\DevEnv\MongoDB2.6\bin]
+Choose a directory where you want to store all database related detials created by mongodb process [ex: D:\DevEnv\Proj]
+Create folder as below inside the above choosen direcotry
+  data
+    db
+    log
+
+Now create a configuration file for mongodb folder
+
+echo logpath=D:\DevEnv\Proj\data\log\mongod.log> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+echo dbpath=D:\DevEnv\Proj\data\db>> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+
+Create mongod.cfg file should have below lines without """ in it.
+logpath=d:\DevEnv\Proj\data\log\mongod.log
+dbpath=d:\DevEnv\Proj\data\d
+</div>
+<div class="exclusion bottomright">
+    MongoDB for Windows
+
+Coming from a windows background, after a lot of head-banging against open-source wall I realized that file path or folder name should not have spaces. This helps in a lot of way, so make it a golden rule.
+
+Download and install NodeJS
+
+Download and install MongoDB msi [http://www.mongodb.org/downloads]
+MongoDB Installer will default install @C:\Program Files\MongoDB2.6
+Copy the installed MongoDB directory to place you prefer as there are no dependency with it.
+Preferable add MongoDB bin directory to SYS ENV path [ex: D:\DevEnv\MongoDB2.6\bin]
+Choose a directory where you want to store all database related detials created by mongodb process [ex: D:\DevEnv\Proj]
+Create folder as below inside the above choosen direcotry
+  data
+    db
+    log
+
+Now create a configuration file for mongodb folder
+
+echo logpath=D:\DevEnv\Proj\data\log\mongod.log> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+echo dbpath=D:\DevEnv\Proj\data\db>> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+
+Create mongod.cfg file should have below lines without """ in it.
+logpath=d:\DevEnv\Proj\data\log\mongod.log
+dbpath=d:\DevEnv\Proj\data\d
+</div>
+
+
+
+</body>
+
+</html>

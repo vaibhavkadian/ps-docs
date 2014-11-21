@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+Hello <div id="data">loading</div>
+<hr/>
+Say <div id="say">No</div>s
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="restifyCommunicationExample.js"></script>
+<script src="restifyCommunicationExampleJQuery.js"></script>
+
+<SCRIPT TYPE="text/javascript">
+
+setTimeout(
+	function() {
+	  getData(
+	    'http://127.0.0.1:8080/hi',
+	    function(response){
+	      console.log('finished getting data');
+	      var div = document.getElementById('data');
+	      var data = JSON.parse(response);
+	      div.innerHTML = data[0].hello;
+	    })
+	},
+	3000);
+
+</SCRIPT>
+
+</body>
+</html>

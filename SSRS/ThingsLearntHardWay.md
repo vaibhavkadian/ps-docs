@@ -28,5 +28,7 @@ Based on my experience and time invested [actually wasted because of the very ra
 > 
 >**A single error on any report item will fail the report** be it incorrect parameter value on some shared or report dataset that you are currently not using.  
 >   
+>**Paramter with '' [BLANK] or NULL value** should explicitly be allowed the value type on report parameter option. If you change dataset column value to these value types and its not mentioned on the report parameter to accept such values ... report would fail.  
+>
 
 --- 

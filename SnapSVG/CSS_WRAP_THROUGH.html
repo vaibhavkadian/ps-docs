@@ -1,0 +1,106 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+	<style type="text/css">
+    #grid {
+        display: grid;
+        grid-columns: 25% 50% 25%;
+        grid-rows: 25% 25% 25% 25%;
+    }
+
+    #exclusion {
+        grid-row: 2;
+        grid-row-span: 2;
+        grid-column: 2;
+        wrap-flow: both;
+    }
+
+    #rowA, #rowB {
+        grid-row-span: 2;
+        grid-column: 1;
+        grid-column-span: 3;
+    }
+
+    #rowA {
+        grid-row: 1;
+    }
+
+    #rowB {
+        grid-row: 3;
+    }
+    </style>
+
+<style type="text/css">
+    .exclusion  {
+      wrap-flow: both;
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      width: 50%;
+      height: 50%;
+      background-color: rgba(220, 230, 242, 0.5);
+    }
+</style>
+
+<div id="grid">
+    <div class="exclusion"></div>
+    <div id="rowA" style="wrap-through: wrap;">MongoDB for Windows
+
+Coming from a windows background, after a lot of head-banging against open-source wall I realized that file path or folder name should not have spaces. This helps in a lot of way, so make it a golden rule.
+
+Download and install NodeJS
+
+Download and install MongoDB msi [http://www.mongodb.org/downloads]
+MongoDB Installer will default install @C:\Program Files\MongoDB2.6
+Copy the installed MongoDB directory to place you prefer as there are no dependency with it.
+Preferable add MongoDB bin directory to SYS ENV path [ex: D:\DevEnv\MongoDB2.6\bin]
+Choose a directory where you want to store all database related detials created by mongodb process [ex: D:\DevEnv\Proj]
+Create folder as below inside the above choosen direcotry
+	data
+		db
+		log
+
+Now create a configuration file for mongodb folder
+
+echo logpath=D:\DevEnv\Proj\data\log\mongod.log> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+echo dbpath=D:\DevEnv\Proj\data\db>> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+
+Create mongod.cfg file should have below lines without """ in it.
+logpath=d:\DevEnv\Proj\data\log\mongod.log
+dbpath=d:\DevEnv\Proj\data\db</div>
+    <div id="rowB" style="wrap-through: none;">MongoDB for Windows
+
+Coming from a windows background, after a lot of head-banging against open-source wall I realized that file path or folder name should not have spaces. This helps in a lot of way, so make it a golden rule.
+
+Download and install NodeJS
+
+Download and install MongoDB msi [http://www.mongodb.org/downloads]
+MongoDB Installer will default install @C:\Program Files\MongoDB2.6
+Copy the installed MongoDB directory to place you prefer as there are no dependency with it.
+Preferable add MongoDB bin directory to SYS ENV path [ex: D:\DevEnv\MongoDB2.6\bin]
+Choose a directory where you want to store all database related detials created by mongodb process [ex: D:\DevEnv\Proj]
+Create folder as below inside the above choosen direcotry
+	data
+		db
+		log
+
+Now create a configuration file for mongodb folder
+
+echo logpath=D:\DevEnv\Proj\data\log\mongod.log> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+echo dbpath=D:\DevEnv\Proj\data\db>> "D:\DevEnv\MongoDB2.6\mongod.cfg"
+
+Create mongod.cfg file should have below lines without """ in it.
+logpath=d:\DevEnv\Proj\data\log\mongod.log
+dbpath=d:\DevEnv\Proj\data\db</div>
+</div>
+
+
+
+</body>
+
+</html>

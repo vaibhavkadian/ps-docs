@@ -1,0 +1,28 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<SCRIPT TYPE="text/javascript" src="Snap.svg-0.3.0\dist\snap.svg.js"></SCRIPT>
+</head>
+
+<body>
+	
+<style type="text/css">
+.logo-mask {
+/* *** For Firefox use mask *** */
+/* *** Note that we use an ID selector here #logo_mask *** */
+/* *** which is the same as the ID we defined in the SVG mask *** */
+mask: url("logo-mask.svg#logo_mask");
+/* *** For webkit use -webkit-mask-image *** */
+-webkit-mask-image: url("croc.svg");
+width: 300px;
+height: 300px;
+}
+</style>
+
+<img class="logo-mask" src="yobelmarket.jpg" /><!-- Square Image -->
+<img class="logo-mask" src="yobel-thumb.jpg" /><!-- Rectangular Image -->
+
+</body>
+
+</html>
