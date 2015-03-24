@@ -1,0 +1,63 @@
+Scala [Scalable Language]
+
+BST license
+Martin Odersky creater
+2001 release
+2011 Typesafe founded
+
+
+Concise and expressive code
+  code == liability
+Java interoperability
+  compiles to JVM bytecode
+Re-active applications
+  scalable , resilient , responsive, event-driven
+  www.reactivemanifesto.org
+
+www.scala-lang.org
+www.scala-sbt.org [Simple Build Tool]
+
+REPL - read eval print loop
+
+All types are object infereing from scala.Any
+
+val are immutable[constant] whereas var are muttable variables
+
+def function_name (parameter_name : parameter_type [,]) : return_type = functione_definition
+
+def bToI (bvar : Boolean) = if(bvar = true) 1 else "0"
+ -return type is inffered as Any , caus 1 & "0" are returnable
+def bToI (bvar : Boolean) : Int = if(bvar = true) 1 else "0"
+ -error caus "0" is not type INT
+def bToI (bvar : Boolean) : Int = if(bvar = true) 1 else 0
+ -return type is Int
+
+
+docs.scala-lang.org/style
+
+
+sbt --> console [gives a REPL] --> :q [exit REPL] --> exit
+
+create scala project
+  touch build.sbt && start build.sbt
+    name := "File Searcher
+
+    version := "0.1"
+
+    scalaVersion := "2.10.4"
+  blank line b/w each settings act as setting terminator
+  these settings are used to create JAR files
+
+ mkdir project && touch project\build.properties && start project\build.properties
+   sbt.version = 0.13.1
+
+ touch project\plugin.sbt && start project\plugin.sbt
+   addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.4.0")
+ -maven dependency resolutionstyle
+
+Eclipse Scala Worksheet is similar to REPL , once saved each line output is shown on right after ">"
+
+FlatSpec is a scala trait
+
+
+
