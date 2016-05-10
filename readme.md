@@ -16,6 +16,8 @@ TypeScript
   
 [Setup CentOS using VMPlayer](SetupCentOSVMPlayer.md "Setup CentOS using VMPlayer")
 
+[Oracle/Toad Tips](OracleToad.md "Oracle / Toad Tips")
+
 
 
 
