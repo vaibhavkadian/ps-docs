@@ -11,3 +11,11 @@ Built-in Functions
 > 
 >NTILE [refer](http://msdn.microsoft.com/en-IN/library/ms175126.aspx "")
 >>Distributes the rows in an ordered partition into a specified number of groups. The groups are numbered, starting at one. For each row, NTILE returns the number of the group to which the row belongs. 
+
+
+>Column Identification Queries
+> >Identify specific column by name
+> >> SELECT t.name AS table_name, SCHEMA_NAME(schema_id) AS schema_name, c.name AS column_name FROM sys.tables AS t INNER JOIN sys.columns c ON t.OBJECT_ID = c.OBJECT_ID WHERE c.name LIKE '%-Column-Name-%' ORDER BY schema_name, table_name;
+>
+> >List all DB column
+> >>SELECT t.name AS table_name, SCHEMA_NAME(schema_id) AS schema_name, c.name AS column_name FROM sys.tables AS t INNER JOIN sys.columns c ON t.OBJECT_ID = c.OBJECT_ID ORDER BY schema_name, table_name; 
