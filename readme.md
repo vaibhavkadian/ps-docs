@@ -18,6 +18,8 @@ TypeScript
 
 [Oracle/Toad Tips](OracleToad.md "Oracle / Toad Tips")
 
+[Windows Dll](DLL.md)
+
 
 
 
