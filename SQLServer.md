@@ -19,3 +19,17 @@ Built-in Functions
 >
 > >List all DB column
 > >>SELECT t.name AS table_name, SCHEMA_NAME(schema_id) AS schema_name, c.name AS column_name FROM sys.tables AS t INNER JOIN sys.columns c ON t.OBJECT_ID = c.OBJECT_ID ORDER BY schema_name, table_name; 
+
+
+
+> SQL Server Exclusive Access Error
+> >SQL DB if in use by some process , will throw SqlError: Exclusive access could not be obtained..... Smo)
+> >>![Restore Exclusive Access not granted](SQLServer\RestoreExclusiveAccess.jpg)
+>
+> >to fix the issue:
+> >>Open Activity Monitor ... Right click on the SQL Serve Instance Name under Object Explorer in SQL Server Management Studio.
+> >>![Activity Monitor](SQLServer\ActivityMonitor.jpg)
+> >> 
+> >>Identify the running process for the DB using Database Column
+> >>Right click and click Kill Process option
+> >>![Kill Sql Process](SQLServer\ActivityMonitorKillProcess.jpg)
