@@ -18,7 +18,10 @@ TypeScript
 
 [Oracle/Toad Tips](OracleToad.md "Oracle / Toad Tips")
 
-[Windows Dll](DLL.md)
+[Windows Dll](DLL.md "Windows DLL")
+
+[Node JS](nodejs.md "Node JS")
+[Node Package Manager](npm.md "Node Package Manager aka NPM)
 
 
 
