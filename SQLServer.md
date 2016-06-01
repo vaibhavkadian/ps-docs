@@ -24,12 +24,12 @@ Built-in Functions
 
 > SQL Server Exclusive Access Error
 > >SQL DB if in use by some process , will throw SqlError: Exclusive access could not be obtained..... Smo)
-> >>![Restore Exclusive Access not granted](SQLServer\RestoreExclusiveAccess.jpg)
+![Restore Exclusive Access not granted](SQLServer\RestoreExclusiveAccess.jpg)
 >
 > >to fix the issue:
 > >>Open Activity Monitor ... Right click on the SQL Serve Instance Name under Object Explorer in SQL Server Management Studio.
-> >>![Activity Monitor](SQLServer\ActivityMonitor.jpg)
+![Activity Monitor](SQLServer\ActivityMonitor.jpg)
 > >> 
 > >>Identify the running process for the DB using Database Column
 > >>Right click and click Kill Process option
-> >>![Kill Sql Process](SQLServer\ActivityMonitorKillProcess.jpg)
+![Kill Sql Process](SQLServer\ActivityMonitorKillProcess.jpg)

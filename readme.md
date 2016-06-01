@@ -6,7 +6,7 @@
 
 [JavaScript](Javascript.md "JavaScript")  
 [Bower](Bower.md "Bower")  
-[GRUNT.md](GRUNT.md "GRUNT")  
+[GRUNT](GRUNT.md "GRUNT")  
 [Polymer Basics](PolymerBasics.md "Ploymer Basics")  
 TypeScript
 
@@ -21,7 +21,7 @@ TypeScript
 [Windows Dll](DLL.md "Windows DLL")
 
 [Node JS](nodejs.md "Node JS")
-[Node Package Manager](npm.md "Node Package Manager aka NPM)
+[Node Package Manager](npm.md "Node Package Manager aka NPM")
 
 
 
