@@ -33,3 +33,15 @@ Built-in Functions
 > >>Identify the running process for the DB using Database Column
 > >>Right click and click Kill Process option
 ![Kill Sql Process](SQLServer/ActivityMonitorKillProcess.jpg)
+
+
+> Change Data Capture [refer](https://msdn.microsoft.com/en-us/library/cc645937%28v=sql.110%29.aspx "")
+> >Change data capture records insert, update, and delete activity that is applied to a SQL Server table. 
+> >This makes the details of the changes available in an easily consumed relational format.
+> >change data capture must be explicitly enabled for the database using the stored procedure [sys.sp_cdc_enable_db](https://msdn.microsoft.com/en-us/library/bb510486%28v=sql.110%29.aspx "").
+> >source tables can then be identified as tracked tables by using the stored procedure [sys.sp_cdc_enable_table](https://msdn.microsoft.com/en-us/library/bb522475%28v=sql.110%29.aspx "").
+![CDC](SQLServer/ChangeDataCapture.gif)
+
+
+[Backup]("Backup" SQLServer/BAK/backup.md)
+[Restore]("Restore" SQLServer/BAK/restore.md)
