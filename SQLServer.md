@@ -43,5 +43,5 @@ Built-in Functions
  ![CDC](SQLServer/ChangeDataCapture.gif)
 
 
-[Backup]("Backup" SQLServer/BAK/backup.md) 
-[Restore]("Restore" SQLServer/BAK/restore.md)
+[Backup](SQLServer/BAK/backup.md "Backup") 
+[Restore](SQLServer/BAK/restore.md "Restore")
