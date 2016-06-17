@@ -10,3 +10,14 @@ https://technet.microsoft.com/en-us/magazine/hh551144.aspx
 
 vs project build step using powershell  
 http://stackoverflow.com/questions/6500320/post-build-event-execute-powershell  
+
+
+
+(New-Object system.data.oledb.oledbenumerator).GetElements() | select SOURCES_NAME, SOURCES_DESCRIPTION 
+
+
+
+
+$AceVersion = ((New-Object System.Data.OleDb.OleDbEnumerator).GetElements() | Where-Object { $_.SOURCES_NAME -like "Microsoft.ACE.OLEDB*" } | Sort-Object SOURCES_NAME -Descending | Select-Object -First 1 SOURCES_NAME).SOURCES_NAME
+
+$connString = "Provider=$AceVersion;Data Source=`"$filepath`";Extended Properties=`"Excel 12.0 Xml;HDR=NO`";"
