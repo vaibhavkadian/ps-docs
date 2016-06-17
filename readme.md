@@ -1,6 +1,7 @@
 # Sample document files based of learning #
 -
-[Practical DOS commands](DOS.md)
+[Practical DOS commands](DOS.md)  
+[PowerShell](powershell.md)  
 
 [D3 aka Data Driven Documents](D3JS.md "D3 aka Data Driven Documents")
 
@@ -20,7 +21,7 @@ TypeScript
 
 [Windows Dll](DLL.md "Windows DLL")
 
-[Node JS](nodejs.md "Node JS") 
+[Node JS](nodejs.md "Node JS")  
 [Node Package Manager](npm.md "Node Package Manager aka NPM")
 
 
