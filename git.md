@@ -3,9 +3,9 @@
 
 Authentication 
 >github provides 3 ways to authenticate all request. 
->>username/password 
->>username/two-factor-auth 
->>username/access-tokens 
+> >username/password 
+> >username/two-factor-auth 
+> >username/access-tokens 
 
 >username/password is the most basic auth, can be used from  github desktop, terminal. 
 >username/tow-factor-auth is basic the recommended approach which forces user to provided both password and a time based key from an application pre configured and authenticated. Idea resonates to OTP type auth but rather then SMS its application based. 
@@ -29,7 +29,7 @@ Updating Forked Repo
 > >execute command 'git remote -v', it would show you list of active repo sources in the current dir. 
 > >>if you clone a source git without fork 'origin' would point to source user. 
 > >>![source cloned repo](GIT/github-cloned-repo.png) 
-> >>instead if you fork a repo and then clone it locally, it should have 'origin' pointing to forked repo by your username and '[source-repo-username]' (in the below case getify) pointing to the forke repo. 
+> >>instead if you fork a repo and then clone it locally, it should have 'origin' pointing to forked repo by your username and '[source-repo-username]' (in the below case getify) pointing to the forked repo. 
 > >>![cloning forked repo](GIT/github-forked-cloned-repo.png) 
 > >>All git commands by defualt works on 'origin' repo 
 > >to add remote repo locally 
